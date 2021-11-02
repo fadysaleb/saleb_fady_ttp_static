@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My Name and Favorite Hobby Deployed Static Web Page</title>
+   </head>
+   <! --- Header --->
+   <h1>My name is Fady Saleb. My hobby is cycling.</h1>
+   <hr>
+   <! --- Body --->
+   <p><b>The current time is: <span id="liveClock"></span></b></p>
+   </body>
+   <! --- Footer --->
+   <footer>
+      <script type="text/javascript">
+         /* This function is to get current time
+         and print it into H : M : S
+         Update time every minute for 1000 times
+         */
+         setInterval(function clockSeconds(){ 
+             var currentTime = new Date();
+             document.getElementById('liveClock').innerHTML =
+             currentTime.getHours() + ":" + currentTime.getMinutes()
+              + ":" + currentTime.getSeconds(); 
+         }, 1000);
+      </script>
+   </footer>
+</html>
